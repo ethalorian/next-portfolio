@@ -36,7 +36,8 @@ export default function Header() {
     { label: "</Home>", href: "/" },
     { label: "About", href: "/about" },
     { label: "Portfolio", href: "/services" },
-    { label: "Let's Talk", href: "/contact" },
+    { label: "Resume", href: "/resume" },
+    { label: "Let's Talk", href: "https://calendly.com/onlyethalorian/30min" },
   ]
 
   return (
