@@ -47,7 +47,7 @@ export default function CodeText({ code, animationSpeed = 50, maxHeight = "400px
         </div>
         <pre 
           ref={preRef}
-          className="text-xs sm:text-sm md:text-sm whitespace-pre-wrap break-words" 
+          className="text-xs sm:text-xs md:text-xs whitespace-pre-wrap break-words" 
           role="region" 
           aria-label="Animated code block"
           style={{ maxHeight: maxHeight, height: maxHeight }}

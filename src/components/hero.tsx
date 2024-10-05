@@ -7,14 +7,14 @@ import { Twitter, Github, Linkedin } from 'lucide-react'
 
 function SocialIcons() {
     return (
-      <div className="flex space-x-4 mb-10 justify-center">
-        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+      <div className="flex space-x-8 mb-6 justify-center">
+        <a href="https://twitter.com/ethalorian" target="_blank" rel="noopener noreferrer">
           <Twitter className="w-12 h-12" />
         </a>
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/ethalorian" target="_blank" rel="noopener noreferrer">
           <Github className="w-12 h-12" />
         </a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/craig-antocci-95140919/" target="_blank" rel="noopener noreferrer">
           <Linkedin className="w-12 h-12" />
         </a>
       </div>
@@ -22,20 +22,29 @@ function SocialIcons() {
   }
 
 export default function Hero() {
+    const currentYear = new Date().getFullYear();
+
     const codeLines = [
-      "const greeting = 'Hello, I'm Craig';",
-      "const role = 'Full Stack Developer';",
-      "const skills = ['React', 'Node.js', 'TypeScript'];",
-      "",
-      "function introduce() {",
-      "  console.log(greeting);",
-      "  console.log(`I'm a ${role}`);",
-      "  console.log('My skills include:');",
-      "  skills.forEach(skill => console.log(`- ${skill}`));",
-      "}",
-      "",
-      "introduce();"
-    ];
+        "const name = 'Craig Antocci';",
+        "const role = 'Full Stack Developer';",
+        "const skills = ['React', 'Node.js', 'TypeScript', 'Docker','TailwindCSS'];",
+        "",
+        "const initialValue = 1;",
+        "const dailyGrowthRate = 0.01; // 1% daily growth",
+        "const daysInYear = 365;",
+        "",
+        "function calculateCompoundGrowth(initial, rate, days) {",
+        "  return initial * Math.pow(1 + rate, days);",
+        "}",
+        "",
+        "const finalValue = calculateCompoundGrowth(initialValue, dailyGrowthRate, daysInYear);",
+        "console.log(`After 1 year of 1% daily growth:`);",
+        "console.log(`Initial value: ${initialValue}`);",
+        "console.log(`Final value: ${finalValue.toFixed(2)}`);",
+        "console.log(`Growth factor: ${(finalValue / initialValue).toFixed(2)}x`);",
+        "",
+        "I strive to be one percent better each day.  It's a lifestyle as much as a mindset."
+      ];
   
     return (
         <div className="flex flex-col max-h-screen">
@@ -50,9 +59,10 @@ export default function Hero() {
                     Hi, I'm Craig!
                   </span>
                 </div>
-                <div className="w-[90%] h-[500px] md:pr-0 mb-20">
+                <div className="w-[90%] h-[500px] md:pr-0 mb-8  rounded-xl ">
                   <CodeText code={codeLines} maxHeight="500px" />
                 </div>
+                
               </div>
             
               {/* Second column with Avatar */}
@@ -68,6 +78,9 @@ export default function Hero() {
           </div>
           <footer>
           <SocialIcons />
+          <p className="text-center mt-4 text-sm text-gray-600">
+          &copy; {currentYear} ethalorian. All rights reserved.
+        </p>
         </footer>
         </div>
         
