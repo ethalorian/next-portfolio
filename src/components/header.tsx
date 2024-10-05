@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/navigation-menu"
 import { Layers3, X } from "lucide-react"
 
+
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
@@ -35,20 +36,22 @@ export default function Header() {
   const menuItems = [
     { label: "</Home>", href: "/" },
     { label: "About", href: "/about" },
-    { label: "Portfolio", href: "/services" },
     { label: "Resume", href: "/resume" },
-    { label: "Let's Talk", href: "https://calendly.com/onlyethalorian/30min" },
+    { label: "Portfolio", href: "/services" },
+    { label: "Let's Talk", href: "https://calendly.com/onlyethalorian/30min", target: "_blank", rel: "noopener noreferrer" },
   ]
 
   return (
     <header className="sticky top-0 z-50 w-full bg-background shadow-md">
         <div className=" hidden items-center justify-center w-full md:flex">
           <NavigationMenu className="mx-auto">
-            <NavigationMenuList className="flex justify-center space-x-40">
+            <NavigationMenuList className="flex justify-center space-x-20">
               {menuItems.map((item) => (
                 <NavigationMenuItem key={item.href}>
                   <NavigationMenuLink
                     href={item.href}
+                    target={item.target}
+                    rel={item.rel}
                     className="group inline-flex h-18 w-max items-center justify-center rounded-md bg-background px-4 py-4 text-xl font-extrabold transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                   >
                     {item.label}
@@ -79,6 +82,8 @@ export default function Header() {
         <a
           key={item.href}
           href={item.href}
+          target={item.target}
+          rel={item.rel}
           className="inline-flex h-16 items-center justify-center rounded-md bg-background px-4 text-2xl font-bold transition-colors hover:bg-accent hover:text-accent-foreground"
           onClick={() => setIsMobileMenuOpen(false)}
         >
