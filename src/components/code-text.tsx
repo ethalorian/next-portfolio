@@ -9,7 +9,7 @@ interface CodeTextProps {
   maxHeight?: string;
 }
 
-export default function CodeText({ code, animationSpeed = 100, maxHeight = "400px" }: CodeTextProps) {
+export default function CodeText({ code, animationSpeed = 50, maxHeight = "400px",  }: CodeTextProps) {
   const [visibleText, setVisibleText] = useState("")
   const [currentLineIndex, setCurrentLineIndex] = useState(0)
   const [currentCharIndex, setCurrentCharIndex] = useState(0)
@@ -47,15 +47,15 @@ export default function CodeText({ code, animationSpeed = 100, maxHeight = "400p
         </div>
         <pre 
           ref={preRef}
-          className="text-sm flex-grow overflow-auto" 
+          className="text-xs sm:text-sm md:text-sm whitespace-pre-wrap break-words" 
           role="region" 
           aria-label="Animated code block"
           style={{ maxHeight: maxHeight, height: maxHeight }}
         >
           {visibleText.split('\n').map((line, index) => (
             <React.Fragment key={index}>
-              <span className="text-zinc-500">{(index + 1).toString().padStart(2, '0')} </span>
-              {line}
+              <span className="text-zinc-500 inline-block min-w-[2ch]">{(index + 1).toString().padStart(2, '0')} </span>
+              <span className="inline">{line}</span>
               {index < visibleText.split('\n').length - 1 && <br />}
             </React.Fragment>
           ))}
