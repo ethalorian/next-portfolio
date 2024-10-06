@@ -35,8 +35,8 @@ export default function Header() {
 
   const menuItems = [
     { label: "</Home>", href: "/" },
-    { label: "About", href: "/about" },
-    { label: "Resume", href: "/resume" },
+    { label: "About", href: "/" },
+    { label: "Resume", href: "/" },
     { label: "Portfolio", href: "/portfolio" },
     { label: "Let's Talk", href: "https://calendly.com/onlyethalorian/30min", target: "_blank", rel: "noopener noreferrer" },
   ]
