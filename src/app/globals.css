@@ -6,6 +6,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.code-block {
+  @apply text-code-light dark:text-code-dark;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -39,6 +43,9 @@ body {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+    --code-light: 220 13% 18%; /* Dark color for light theme */
+    --code-dark: 0 0% 100%;    /* White color for dark theme */
+    --glow-color: 0 0% 0% / 0.1; /* Transparent black for light mode */
   }
   .dark {
     --background: 240 10% 3.9%;
@@ -65,6 +72,9 @@ body {
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+    --code-light: 220 13% 18%; /* Dark color for light theme (unused) */
+    --code-dark: 0 0% 100%;    /* White color for dark theme */
+    --glow-color: 308 83% 47% / 0.9; /* Transparent white for dark mode */
   }
 }
 

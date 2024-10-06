@@ -38,7 +38,7 @@ export default function CodeText({ code, animationSpeed = 50, maxHeight = "400px
   }, [code, animationSpeed, currentLineIndex, currentCharIndex])
 
   return (
-    <Card className="w-full h-full bg-zinc-950 text-zinc-50 font-mono">
+    <Card className="w-full h-full bg-background text-foreground font-mono shadow-lg shadow-glow transition-shadow duration-300">
       <CardContent className="p-4 h-full flex flex-col">
         <div className="flex space-x-2 mb-4" aria-hidden="true">
           <div className="w-3 h-3 rounded-full bg-red-500" />
@@ -47,7 +47,7 @@ export default function CodeText({ code, animationSpeed = 50, maxHeight = "400px
         </div>
         <pre 
           ref={preRef}
-          className="text-xs sm:text-xs md:text-xs whitespace-pre-wrap break-words" 
+          className="code-block text-xs sm:text-xs md:text-xs whitespace-pre-wrap break-words" 
           role="region" 
           aria-label="Animated code block"
           style={{ maxHeight: maxHeight, height: maxHeight }}

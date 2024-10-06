@@ -60,7 +60,7 @@ export default function Hero() {
               {/* Second column with Avatar */}
               <div className="w-full md:w-1/2 flex items-center justify-center order-1 md:order-2">
                 <div className="w-3/5 md:w-3/5 mt-10 md:mt-0">
-                  <Avatar className="w-full h-auto">
+                  <Avatar className="w-full h-auto shadow-lg dark:shadow-2xl dark:shadow-glow transition-shadow duration-300">
                     <AvatarImage src="/craig-no-bg.png" />
                     <AvatarFallback>CN</AvatarFallback>
                   </Avatar>
