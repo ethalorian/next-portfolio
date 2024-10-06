@@ -21,7 +21,7 @@ const RepoCard: React.FC<RepoCardProps> = ({ name, description, url, cloneUrl, i
   };
 
   return (
-    <Card className="w-full max-w-md flex flex-col shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out">
+    <Card className="w-full max-w-md flex flex-col shadow-glow shadow-lg transition-shadow duration-300 ease-in-out">
       <div className="relative w-full pt-[52.356%]">
         <Image
           src={imageSrc}

@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { Octokit } from '@octokit/rest';
 import RepoCard from '@/components/repo-card';
 import Header from '@/components/header';
+import Footer from '@/components/footer';
 
 
 interface Repo {
@@ -74,7 +75,7 @@ export default function PortfolioPage() {
           </div>
         )}
       </main>
-    
+        <Footer/>
     </div>
   );
 }

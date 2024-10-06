@@ -3,27 +3,11 @@
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import CodeText from "./code-text";
 import Header from "./header";
-import { Twitter, Github, Linkedin } from 'lucide-react'
-import ThemeSwitcher from "./theme-switcher";
+import Footer from "./footer";
 
-function SocialIcons() {
-    return (
-      <div className="flex space-x-8 mb-6 justify-center">
-        <a href="https://twitter.com/ethalorian" target="_blank" rel="noopener noreferrer">
-          <Twitter className="w-12 h-12" />
-        </a>
-        <a href="https://github.com/ethalorian" target="_blank" rel="noopener noreferrer">
-          <Github className="w-12 h-12" />
-        </a>
-        <a href="https://www.linkedin.com/in/craig-antocci-95140919/" target="_blank" rel="noopener noreferrer">
-          <Linkedin className="w-12 h-12" />
-        </a>
-      </div>
-    )
-  }
 
 export default function Hero() {
-    const currentYear = new Date().getFullYear();
+    
 
     const codeLines = [
         "const name = 'Craig Antocci';",
@@ -68,11 +52,8 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <footer className="mt-12">
-          <SocialIcons />
-          <p className="text-center mt-4 text-base text-gray-600">
-          &copy; {currentYear} ethalorian. All rights reserved. <ThemeSwitcher/>
-        </p>
+          <footer>
+            <Footer/>
         
         </footer>
         </div>
