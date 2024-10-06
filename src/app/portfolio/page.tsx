@@ -29,7 +29,7 @@ async function getLastPublicRepos(username: string, maxRepos: number = 4): Promi
     name: repo.name,
     description: repo.description || '',
     url: repo.html_url,
-    cloneUrl: repo.clone_url,
+    cloneUrl: repo.clone_url || '',
     imageSrc: `https://opengraph.githubassets.com/1/${repo.full_name}`,
     demoUrl: repo.homepage || '',
   }));

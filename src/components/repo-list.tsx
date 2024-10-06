@@ -7,6 +7,8 @@ interface Repo {
   description: string;
   html_url: string;
   clone_url: string;
+  imageSrc?: string;
+  demoUrl?: string;
 }
 
 interface RepoListProps {
@@ -23,6 +25,8 @@ const RepoList: React.FC<RepoListProps> = ({ initialRepos }) => {
           description={repo.description || 'No description available'}
           url={repo.html_url}
           cloneUrl={repo.clone_url}
+          imageSrc={repo.imageSrc || ''}  // Add this line
+          demoUrl={repo.demoUrl || ''}
         />
       ))}
     </div>
