@@ -4,6 +4,7 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import CodeText from "./code-text";
 import Header from "./header";
 import { Twitter, Github, Linkedin } from 'lucide-react'
+import ThemeSwitcher from "./theme-switcher";
 
 function SocialIcons() {
     return (
@@ -70,8 +71,9 @@ export default function Hero() {
           <footer>
           <SocialIcons />
           <p className="text-center mt-4 text-base text-gray-600">
-          &copy; {currentYear} ethalorian. All rights reserved.
+          &copy; {currentYear} ethalorian. All rights reserved. <ThemeSwitcher/>
         </p>
+        
         </footer>
         </div>
         
