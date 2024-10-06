@@ -42,7 +42,7 @@ export default function Header() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-background shadow-md dark:shadow-lg dark:shadow-glow transition-shadow duration-300">
+    <header className="sticky top-0 z-50 w-full bg-background shadow-md dark:shadow-md dark:shadow-glow transition-shadow duration-300">
         <div className=" hidden items-center justify-center w-full md:flex">
           <NavigationMenu className="mx-auto">
             <NavigationMenuList className="flex justify-center space-x-20">

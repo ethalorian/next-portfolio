@@ -51,8 +51,8 @@ export default function Hero() {
                     Hi, I'm Craig!
                   </span>
                 </div>
-                <div className="w-[85%] h-[500px] md:pr-0 mb-8  rounded-xl ">
-                  <CodeText code={codeLines} maxHeight="500px" />
+                <div className="w-[85%] h-[350px] md:pr-0 mb-8  rounded-2xl shadow-md shadow-glow transition-shadow duration-300 ">
+                  <CodeText code={codeLines} />
                 </div>
                 
               </div>
@@ -60,7 +60,7 @@ export default function Hero() {
               {/* Second column with Avatar */}
               <div className="w-full md:w-1/2 flex items-center justify-center order-1 md:order-2">
                 <div className="w-3/5 md:w-3/5 mt-10 md:mt-0">
-                  <Avatar className="w-full h-auto shadow-lg dark:shadow-2xl dark:shadow-glow transition-shadow duration-300">
+                  <Avatar className="w-full h-auto shadow-xl dark:shadow-xl dark:shadow-glow transition-shadow duration-300 mb-12">
                     <AvatarImage src="/craig-no-bg.png" />
                     <AvatarFallback>CN</AvatarFallback>
                   </Avatar>
@@ -68,7 +68,7 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <footer>
+          <footer className="mt-12">
           <SocialIcons />
           <p className="text-center mt-4 text-base text-gray-600">
           &copy; {currentYear} ethalorian. All rights reserved. <ThemeSwitcher/>

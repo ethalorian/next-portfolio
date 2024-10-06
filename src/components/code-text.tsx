@@ -38,7 +38,7 @@ export default function CodeText({ code, animationSpeed = 50, maxHeight = "400px
   }, [code, animationSpeed, currentLineIndex, currentCharIndex])
 
   return (
-    <Card className="w-full h-full bg-background text-foreground font-mono shadow-lg shadow-glow transition-shadow duration-300">
+    <Card className="w-full h-full bg-background text-foreground font-mono ">
       <CardContent className="p-4 h-full flex flex-col">
         <div className="flex space-x-2 mb-4" aria-hidden="true">
           <div className="w-3 h-3 rounded-full bg-red-500" />
