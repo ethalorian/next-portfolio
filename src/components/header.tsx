@@ -34,9 +34,8 @@ export default function Header() {
   }
 
   const menuItems = [
-    { label: "<CDA/>", href: "/" },
-    { label: "About", href: "/" },
-    { label: "Resume", href: "/https://drive.google.com/file/d/1qT4KfOqCXCQgGUaE0Cq_S-CnX78fCXWu/view?usp=sharing" },
+    { label: "<Craig/>", href: "/" },
+    { label: "Resume", href: "https://drive.google.com/file/d/1qT4KfOqCXCQgGUaE0Cq_S-CnX78fCXWu/view?usp=sharing", target: "_blank", rel: "noopener noreferrer" },
     { label: "Portfolio", href: "/portfolio" },
     { label: "Let's Talk", href: "https://calendly.com/onlyethalorian/30min", target: "_blank", rel: "noopener noreferrer" },
   ]
