@@ -9,7 +9,7 @@ interface CodeTextProps {
   maxHeight?: string;
 }
 
-export default function CodeText({ code, animationSpeed = 10, maxHeight = "400px",  }: CodeTextProps) {
+export default function CodeText({ code, animationSpeed = 10, maxHeight = "425px",  }: CodeTextProps) {
   const [visibleText, setVisibleText] = useState("")
   const [currentLineIndex, setCurrentLineIndex] = useState(0)
   const [currentCharIndex, setCurrentCharIndex] = useState(0)
