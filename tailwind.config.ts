@@ -11,8 +11,11 @@ const config: Config = {
   	extend: {
   		colors: {
   			background: 'hsl(var(--background))',
-  			foreground: 'hsl(var(--foreground))',
+  			foreground: 'hsl(var(--foreground) / <alpha-value> )',
+			'high-contrast': 'hsl(0, 0%, 90%)',
 			glow: 'hsl(var(--glow-color))',
+			
+			
   			card: {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
@@ -63,6 +66,6 @@ const config: Config = {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"),require('@tailwindcss/typography')],
 };
 export default config;

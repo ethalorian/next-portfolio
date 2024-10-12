@@ -1,3 +1,6 @@
+'use client';
+
+
 import * as React from "react"
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
@@ -37,6 +40,7 @@ export default function Header() {
     { label: "<Craig/>", href: "/" },
     { label: "Resume", href: "https://drive.google.com/file/d/1EmsPqhnyFsOCirWkhmk6CLGlFX8GP_lw/view?usp=sharing", target: "_blank", rel: "noopener noreferrer" },
     { label: "Portfolio", href: "/portfolio" },
+    { label: "Blog", href: "/blog" },
     { label: "Let's Talk", href: "https://calendly.com/onlyethalorian/30min", target: "_blank", rel: "noopener noreferrer" },
   ]
 
