@@ -42,6 +42,7 @@ export function getSortedPostsData(): PostMetadata[] {
         slug,
         title: data.title as string,
         date: data.date as string,
+        author: data.author as string,
       };
     });
 
