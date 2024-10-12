@@ -2,7 +2,10 @@
 title: "Getting Started with Data Structures and Algorithms: Understanding Big O Notation"
 date: "2024-10-12"
 subtitle: "Post #1"
+author: "Eth"
 ---
+##### Written by: Eth
+##### Date: 2024-10-12
 
 Now that I’ve completed my bootcamp, I’m shifting my focus to studying Data Structures and Algorithms in preparation for potential technical interviews. I’ve realized that I learn best when I teach, so I’ve decided to blog about my progress here. After all, what better place to share my learning journey and insights than on my personal portfolio site?
 
@@ -26,4 +29,4 @@ To illustrate, consider an array containing the numbers 1 through 7 in order. If
 
 The simplest example is a basic for loop. The graph of **O(n)** shows a linear relationship, where the number of operations increases directly with the input size (n). In this case, n is the independent variable, and Big O is the dependent variable, illustrating that as n grows, the number of operations required increases at a constant rate.
 
-That’s all I have time for today! Now I just need to build the blog on my portfolio site to host this post. -Eth
+That’s all I have time for today! Now I just need to build the blog on my portfolio site to host this post. 

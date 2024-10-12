@@ -19,7 +19,7 @@ export default function BlogPost({ params }: BlogPostProps) {
     <>
     <Header />
     <div className="prose prose-lg max-w-prose mx-auto prose-invert text-high-contrast my-8 px-4 sm:px-6 md:px-8">
-      <h1 className="text-high-contrast">{post.title}</h1>
+      <h2 className="text-high-contrast">{post.title}</h2>
       <ReactMarkdown 
         rehypePlugins={[rehypeHighlight]}
         remarkPlugins={[remarkGfm]}
