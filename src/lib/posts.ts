@@ -6,6 +6,7 @@ export interface PostMetadata {
   slug: string;
   title: string;
   date: string;
+  author: string;
 }
 
 export interface Post extends PostMetadata {
@@ -58,6 +59,7 @@ export function getPostData(slug: string): Post | null {
       content,
       title: data.title as string,
       date: data.date as string,
+      author: data.author as string,
     };
   } catch (error) {
     console.error(`Error reading post file ${slug}:`, error);

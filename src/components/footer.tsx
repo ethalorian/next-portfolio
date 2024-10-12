@@ -1,3 +1,5 @@
+"use client";
+
 import ThemeSwitcher from "./theme-switcher";
 import { Twitter, Github, Linkedin } from 'lucide-react'
 
@@ -25,8 +27,10 @@ function SocialIcons() {
     )
   }
 
-export default function Footer () {
-    return(
-        <SocialIcons/>
+  export default function Footer() {
+    return (
+      <footer className="fixed bottom-0 left-0 w-full bg-white dark:bg-black py-4">
+        <SocialIcons />
+      </footer>
     );
-}
+  }

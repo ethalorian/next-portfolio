@@ -4,8 +4,6 @@ date: "2024-10-12"
 subtitle: "Post #1"
 author: "Eth"
 ---
-##### Written by: Eth
-##### Date: 2024-10-12
 
 Now that I’ve completed my bootcamp, I’m shifting my focus to studying Data Structures and Algorithms in preparation for potential technical interviews. I’ve realized that I learn best when I teach, so I’ve decided to blog about my progress here. After all, what better place to share my learning journey and insights than on my personal portfolio site?
 

@@ -18,12 +18,14 @@ export default function BlogPost({ params }: BlogPostProps) {
   return (
     <>
     <Header />
-    <div className="prose prose-lg max-w-prose mx-auto prose-invert text-high-contrast my-8 px-4 sm:px-6 md:px-8">
-      <h2 className="text-high-contrast">{post.title}</h2>
+    <div className="max-w-prose mx-auto my-8 px-4 sm:px-6 md:px-8">
+      <h2 className="text-2xl font-bold mb-2">{post.title}</h2>
+      <p className="text-muted-foreground">Written by: {post.author}</p>
+      <p className="text-muted-foreground mb-4">Date: {post.date}</p>
       <ReactMarkdown 
         rehypePlugins={[rehypeHighlight]}
         remarkPlugins={[remarkGfm]}
-        className="text-high-contrast"
+        className="prose dark:prose-invert max-w-none"
       >
         {post.content}
       </ReactMarkdown>
