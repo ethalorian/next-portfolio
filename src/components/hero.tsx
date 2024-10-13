@@ -2,8 +2,7 @@
 
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import CodeText from "./code-text";
-import Header from "./header";
-import Footer from "./footer";
+
 
 
 export default function Hero() {
@@ -35,7 +34,6 @@ export default function Hero() {
   
     return (
         <div className="flex flex-col max-h-screen">
-          <Header />
           <div className="flex-grow mt-16 mb-1 "> {/* Add top margin to account for fixed header */}
             <div className="flex flex-col md:flex-row h-full">
               {/* First column with Name and CodeText */}
@@ -63,10 +61,6 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <footer>
-            <Footer/>
-        
-        </footer>
         </div>
         
       );

@@ -45,25 +45,25 @@ export default function Header() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-background shadow-md dark:shadow-md dark:shadow-glow transition-shadow duration-300">
-        <div className=" hidden items-center justify-center w-full md:flex">
-          <NavigationMenu className="mx-auto">
-            <NavigationMenuList className="flex justify-center space-x-20">
-              {menuItems.map((item) => (
-                <NavigationMenuItem key={item.href}>
-                  <NavigationMenuLink
-                    href={item.href}
-                    target={item.target}
-                    rel={item.rel}
-                    className="group inline-flex h-18 w-max items-center justify-center rounded-md bg-background px-4 py-4 text-xl font-extrabold transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
-                  >
-                    {item.label}
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-              ))}
-            </NavigationMenuList>
-          </NavigationMenu>
-        </div>
+    <header className="sticky top-0 z-50 w-full bg-background shadow-md dark:shadow-md dark:shadow-glow transition-shadow duration-300 px-4 sm:px-6 lg:px-8">
+      <div className="hidden items-center justify-center w-full md:flex max-w-7xl mx-auto">
+        <NavigationMenu className="w-full">
+          <NavigationMenuList className="flex justify-between w-full">
+            {menuItems.map((item) => (
+              <NavigationMenuItem key={item.href}>
+                <NavigationMenuLink
+                  href={item.href}
+                  target={item.target}
+                  rel={item.rel}
+                  className="group inline-flex h-18 w-max items-center justify-center rounded-md bg-background px-4 py-4 text-xl font-extrabold transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                >
+                  {item.label}
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            ))}
+          </NavigationMenuList>
+        </NavigationMenu>
+      </div>
         <div className="flex flex-1 items-center justify-center md:justify-end">
             <nav className="flex items-center">
                 {isMobile && (

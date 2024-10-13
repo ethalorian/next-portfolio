@@ -3,8 +3,8 @@
 import React, { useEffect, useState } from 'react';
 import { Octokit } from '@octokit/rest';
 import RepoCard from '@/components/repo-card';
-import Header from '@/components/header';
-import Footer from '@/components/footer';
+
+
 
 
 interface Repo {
@@ -57,9 +57,8 @@ export default function PortfolioPage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <Header />
       <main className="container mx-auto py-8 px-4">
-        <h1 className="text-3xl font-bold mb-6 text-primary">My Portfolio</h1>
+        <h1 className="text-3xl font-bold mb-6 text-primary">Recent Repositories</h1>
         {loading ? (
           <p>Loading repositories...</p>
         ) : (
@@ -75,7 +74,6 @@ export default function PortfolioPage() {
           </div>
         )}
       </main>
-        <Footer/>
     </div>
   );
 }
