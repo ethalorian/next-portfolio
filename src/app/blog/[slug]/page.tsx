@@ -3,7 +3,6 @@ import ReactMarkdown from 'react-markdown';
 import { notFound } from 'next/navigation';
 import rehypeHighlight from 'rehype-highlight';
 import remarkGfm from 'remark-gfm';
-import Header from '../../../components/header';
 
 interface BlogPostProps {
   params: {
@@ -17,7 +16,6 @@ export default function BlogPost({ params }: BlogPostProps) {
 
   return (
     <>
-    <Header />
     <div className="max-w-prose mx-auto my-8 px-4 sm:px-6 md:px-8">
       <h2 className="text-2xl font-bold mb-2">{post.title}</h2>
       <p className="text-muted-foreground">Written by: {post.author}</p>
