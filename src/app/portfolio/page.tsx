@@ -57,7 +57,7 @@ export default function PortfolioPage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <main className="container mx-auto py-8 px-4">
+      <main className="container mx-auto py-4 px-4">
         <h1 className="text-3xl font-bold mb-6 text-primary">Recent Repositories</h1>
         {loading ? (
           <p>Loading repositories...</p>
