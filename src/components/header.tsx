@@ -37,7 +37,7 @@ export default function Header() {
   }
 
   const menuItems = [
-    { label: "<Craig/>", href: "/" },
+    { label: "<Craig />", href: "/" },
     { label: "Resume", href: "https://drive.google.com/file/d/1EmsPqhnyFsOCirWkhmk6CLGlFX8GP_lw/view?usp=sharing", target: "_blank", rel: "noopener noreferrer" },
     { label: "Portfolio", href: "/portfolio" },
     { label: "Blog", href: "/blog" },
