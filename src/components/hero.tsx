@@ -55,26 +55,22 @@ export default function Hero() {
         </div>
       </div>
       {/* New typewriter effect div */}
-      <div className="w-full py-4 mt-6">
-        <h1 className="text-center text-5xl">
-          I am {' '}
-          <span className="inline-block w-[auto]">
-            <TypeAnimation
-              sequence={[
-                'a relentless problem solver.',
-                5000,
-                'committed to growth.',
-                5000,
-                'a valued team member.',
-                5000,
-              ]}
-              wrapper="span"
-              speed={12}
-              style={{ display: 'inline-block' }}
-              repeat={Infinity}
-            />
-          </span>
-        </h1>
+      <div className="text-center text-8xl">
+        <TypeAnimation
+          sequence={[
+            'Relentless',
+            5000,
+            'Educator',
+            5000,
+            'Leader',
+            5000,
+          ]}
+          wrapper="h1"
+          speed={12}
+          className="text-5xl font-extrabold"
+          style={{ display: 'inline-block' }}
+          repeat={Infinity}
+        />
       </div>
     </div>
   );
