@@ -58,11 +58,11 @@ export default function Hero() {
       <div className="text-center text-8xl">
         <TypeAnimation
           sequence={[
-            'Relentless',
+            'Driven',
             5000,
-            'Educator',
+            'Empathetic',
             5000,
-            'Leader',
+            'Passionate',
             5000,
           ]}
           wrapper="h1"

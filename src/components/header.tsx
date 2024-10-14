@@ -55,7 +55,7 @@ export default function Header() {
                   href={item.href}
                   target={item.target}
                   rel={item.rel}
-                  className="group inline-flex h-18 w-max items-center justify-center rounded-md bg-background px-4 py-4 text-xl font-extrabold transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                  className="group inline-flex h-18 w-max items-center justify-center rounded-md bg-background px-4 py-4 text-2xl font-extrabold transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                 >
                   {item.label}
                 </NavigationMenuLink>
