@@ -7,7 +7,7 @@ export default function BlogPage() {
 
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-8 px-4 sm:px-6 md:px-8 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-8 px-4 sm:px-6 md:px-8 ">
         {posts.map(({ slug, date, title, subtitle }) => (
           <Link key={slug} href={`/blog/${slug}`} className="block">
             <Card className="shadow-glow shadow-lg transition-shadow duration-300 ease-in-out hover:shadow-xl">
